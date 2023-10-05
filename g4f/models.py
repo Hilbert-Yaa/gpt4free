@@ -61,7 +61,7 @@ gpt_35_turbo = Model(
 gpt_4 = Model(
     name          = 'gpt-4',
     base_provider = 'openai',
-    best_provider = Bing
+    best_provider = Aivvm
 )
 
 # Bard
