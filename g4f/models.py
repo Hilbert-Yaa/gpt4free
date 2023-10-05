@@ -25,6 +25,8 @@ from .Provider   import (
     Aibn,
     Bing,
     H2o,
+    Liaobots,
+    Raycast,
 )
 
 @dataclass(unsafe_hash=True)
@@ -61,7 +63,7 @@ gpt_35_turbo = Model(
 gpt_4 = Model(
     name          = 'gpt-4',
     base_provider = 'openai',
-    best_provider = Aivvm
+    best_provider = RetryProvider([Aivvm, Raycast, Bing, Liaobots])
 )
 
 # Bard
