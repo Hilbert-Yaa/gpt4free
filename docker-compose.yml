@@ -2,6 +2,7 @@ version: '3'
 
 services:
   gpt4free:
+    container_name: gpt-api
     build:
       context: .
       dockerfile: Dockerfile
